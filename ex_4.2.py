@@ -1,10 +1,16 @@
 def is_palindrome(word):
+   
+   """
+   Funkcja odwaraca kolejność liter w słowie poprzez slicing 
+   a nastepnie porównuje nowo powstałe słowo z początkowym
 
-    word_reversed = str(reversed(word))
-    if word == word_reversed:
-        return True
-    else: 
-        return False
+   """
+   rword = word[::-1]
+   
+   if rword == word:
+      return True
+   else:
+      return False
+    
         
-is_palindrome("kajak")
-print(str(reversed("kajak")))
+print(is_palindrome("kajak"))
