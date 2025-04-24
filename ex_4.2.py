@@ -14,4 +14,3 @@ def is_palindrome(word):
     
         
 print(is_palindrome("kajak"))
-help(is_palindrome)
